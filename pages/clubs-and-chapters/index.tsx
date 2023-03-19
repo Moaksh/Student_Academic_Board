@@ -10,10 +10,10 @@ export default function Home() {
                                 <img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" className="rounded-xl" />
                          </figure>
                         <div className="card-body items-center text-center">
-                                <h2 className="card-title">Club & Chapter 1 Name</h2>
-                                <p>Club & Chapter Description Goes Here</p>
+                                <h2 className="card-title">Association For Computing Machinery</h2>
+                                <p>The Association for Computing Machinery is a US-based international learned society for computing.</p>
                                 <div className="card-actions">
-                                        <label htmlFor="my-modal-1" className="btn btn-secondary">open modal</label>
+                                        <label htmlFor="my-modal-1" className="btn btn-secondary">View More</label>
                                         <input type="checkbox" id="my-modal-1" className="modal-toggle" />
                                         <label htmlFor="my-modal-1" className="modal cursor-pointer">
                                                 <label className="modal-box relative" htmlFor="">
