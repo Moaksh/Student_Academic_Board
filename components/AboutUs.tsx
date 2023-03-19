@@ -6,7 +6,7 @@ const AboutUs = () => {
                 <div className={"px-6"}>
                     <h1 className="text-5xl font-bold">About Us</h1>
                     <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi. Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisiProvident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisiProvident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi</p>
-                    <button className="btn btn-primary">Read More</button>
+                    <a href="/about-us"><button className="btn btn-primary">Read More</button></a>
                 </div>
             </div>
         </div>
