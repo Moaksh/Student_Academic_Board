@@ -2,8 +2,9 @@
 export default function Home() {
     return (
         <div className="p-16">
-                <h1 className={"font-black text-7xl pb-6"}>Clubs and Chapters</h1>
-                <div className="grid grid-cols-3 gap-4">
+                <h1 className={"font-black text-7xl pb-10"}>Clubs and Chapters</h1>
+                <h1 className={"font-bold text-4xl px-6 "}>Chapters</h1>
+                <div className="grid grid-cols-3 gap-4 p-6">
                     {/* -- Club & Chapter 1 -- */}
                     <div className="card w-96 bg-base-100 shadow-xl">
                         <figure className="px-10 pt-10">
