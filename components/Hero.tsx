@@ -1,7 +1,7 @@
 
 const Hero = () => {
     return (
-        <div className="hero min-h-screen ">
+        <div className="hero min-h-screen absolute">
             <div className="hero-content text-center">
                 <div className="max-w-md">
                     <h1 className="text-5xl font-bold">SCSET Cabinet</h1>

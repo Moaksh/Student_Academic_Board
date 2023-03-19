@@ -9,14 +9,18 @@ import AboutUs from "@/components/AboutUs";
 import CCHome from "@/components/CCHome";
 import Contact from "@/components/Contact";
 import Grievance from "@/components/Grievance";
+import Back from "@/components/Back";
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
     // <h1 className={"text-4xl p-6 font-black"}>Hi there</h1>
-      <div >
-        <Hero />
+      <div>
+        <div className={"container"}>
+            <Hero/>
+            <Back/>
+        </div>
         <AboutUs/>
         <CCHome/>
         <Contact/>

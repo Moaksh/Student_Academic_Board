@@ -1,6 +1,6 @@
 const Navbar = () => {
     return (
-        <div className="navbar  px-10">
+        <div className="navbar px-10">
             <div className="navbar-start">
                 <ul className="menu menu-horizontal px-1">
                     <li><a>Item 1</a></li>
