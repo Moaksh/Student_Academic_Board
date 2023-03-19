@@ -30,17 +30,18 @@ export default function Home() {
             <img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" className="rounded-xl" />
             </figure>
             <div className="card-body items-center text-center">
-            <h2 className="card-title">Club & Chapter 2 Name</h2>
+            <h2 className="card-title">Club & Chapter 1 Name</h2>
             <p>Club & Chapter Description Goes Here</p>
             <div className="card-actions">
-            <label htmlFor="my-modal-4" className="btn btn-primary">open modal</label>
-            <input type="checkbox" id="my-modal-4" className="modal-toggle" />
-            <label htmlFor="my-modal-4" className="modal cursor-pointer">
-            <label className="modal-box relative" htmlFor="">
-            <h3 className="text-lg font-bold">Club & Chapter 2 Name</h3>
+            <label htmlFor="my-modal-3" className="btn btn-secondary">open modal</label>
+            <input type="checkbox" id="my-modal-3" className="modal-toggle" />
+            <div className="modal">
+            <div className="modal-box relative">
+            <label htmlFor="my-modal-3" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+            <h3 className="text-lg font-bold">Club & Chapter 1 Name</h3>
             <p className="py-4">Club & Chapter Detailed Description Goes Here</p>
-            </label>
-            </label>
+            </div>
+            </div>
             </div>
             </div>
             </div>
