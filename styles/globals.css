@@ -3,8 +3,8 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 body {
-    background-image: linear-gradient(to right top, #000223, #01011e, #01011a, #000014, #00000e, #03010d, #06020c, #08030b, #10050f, #180710, #1d090f, #220b0b);
-    font-family: "Montserrat";
+    background-image: linear-gradient(to right top, #111226, #1f1226, #2a1122, #32121c, #371515);
+    font-family: 'Montserrat', sans-serif;
 }
 #bg-wrap{
     filter:blur(100px);
