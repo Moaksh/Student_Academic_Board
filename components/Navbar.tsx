@@ -3,9 +3,9 @@ const Navbar = () => {
         <div className="navbar px-10">
             <div className="navbar-start">
                 <ul className="menu menu-horizontal px-1">
-                    <li><a href="about-us">About Us</a></li>
-                    <li><a href="clubs-and-chapters">Clubs and Chapters</a></li>
-                    <li><a href="events">Events</a></li>
+                    <li><a href="/about-us">About Us</a></li>
+                    <li><a href="/clubs-and-chapters">Clubs and Chapters</a></li>
+                    <li><a href="/events">Events</a></li>
 
                     <li tabIndex="0">
                         <a>
