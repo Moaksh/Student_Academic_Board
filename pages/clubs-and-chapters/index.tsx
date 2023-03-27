@@ -23,7 +23,7 @@ const Clubs = ({ clubs }) => {
                         <div className="card-body items-center text-center">
                             <h2 className="card-title">{club.name}</h2>
                             <p>{club.company.bs}</p>
-                            <Link href={"/clubs-and-chapters/"+club.id} className={"btn btn-secondary"}>asd</Link>
+                            <Link href={"/clubs-and-chapters/"+club.name} className={"btn btn-secondary"}>asd</Link>
                             <div className="card-actions">
                                 <label htmlFor={club.id} className="btn btn-secondary">View More</label>
                                 <input type="checkbox" id={club.id} className="modal-toggle" />
