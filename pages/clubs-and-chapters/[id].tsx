@@ -8,7 +8,7 @@ export const getStaticPaths = async () => {
         .collection("movies")
         .find({})
         .sort({ metacritic: -1 })
-        .limit(20)
+        .limit(80)
         .toArray();
 
     const data = JSON.parse(JSON.stringify(movies));
@@ -32,7 +32,7 @@ export const getStaticProps = async (context) => {
         .collection("movies")
         .find({title:id})
         .sort({ metacritic: -1 })
-        .limit(20)
+        .limit(1)
         .toArray();
 
     return {
@@ -42,8 +42,6 @@ export const getStaticProps = async (context) => {
 }
 
 const Club = ({ club }) => {
-    console.log("asd")
-    console.log(club)
     return (
         <div className={"p-24"}>
             <h1 className={"font-black text-8xl pb-10"}>{club.title}</h1>

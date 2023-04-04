@@ -10,7 +10,7 @@ export async function getServerSideProps() {
             .collection("movies")
             .find({})
             .sort({ metacritic: -1 })
-            .limit(20)
+            .limit(80)
             .toArray();
 
         return {
@@ -21,7 +21,6 @@ export async function getServerSideProps() {
     }
 }
 const Clubs = ({ clubs }) => {
-    console.log(clubs)
     return (
         <div className="p-24">
             <h1 className={"font-black text-8xl pb-10"}>Clubs and Chapters</h1>
