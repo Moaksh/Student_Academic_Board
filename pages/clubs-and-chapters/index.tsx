@@ -1,14 +1,27 @@
 import Link from "next/link";
+import clientPromise from "@/lib/mongodb";
 
-export const getStaticProps = async () => {
-    const res = await fetch('https://jsonplaceholder.typicode.com/users');
-    const data = await res.json();
-    return {
-        props: { clubs: data }
+export async function getServerSideProps() {
+    try {
+        const client = await clientPromise;
+        const db = client.db("sample_mflix");
+
+        const movies = await db
+            .collection("movies")
+            .find({})
+            .sort({ metacritic: -1 })
+            .limit(20)
+            .toArray();
+
+        return {
+            props: { clubs: JSON.parse(JSON.stringify(movies)) },
+        };
+    } catch (e) {
+        console.error(e);
     }
 }
-
 const Clubs = ({ clubs }) => {
+    console.log(clubs)
     return (
         <div className="p-24">
             <h1 className={"font-black text-8xl pb-10"}>Clubs and Chapters</h1>
@@ -21,20 +34,19 @@ const Clubs = ({ clubs }) => {
                             {/*<img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" className="rounded-xl" />*/}
                         </figure>
                         <div className="card-body items-center text-center">
-                            <h2 className="card-title">{club.name}</h2>
-                            <p>{club.company.bs}</p>
-                            <Link href={"/clubs-and-chapters/"+club.name} className={"btn btn-secondary"}>asd</Link>
+                            <h2 className="card-title">{club.title}</h2>
+                            <p>{club.plot}</p>
+                            <Link href={"/clubs-and-chapters/"+club.title} className={"btn btn-secondary"}>asd</Link>
                             <div className="card-actions">
-                                <label htmlFor={club.id} className="btn btn-secondary">View More</label>
-                                <input type="checkbox" id={club.id} className="modal-toggle" />
-                                <label htmlFor={club.id} className="modal cursor-pointer">
+                                <label htmlFor={club._id} className="btn btn-secondary">View More</label>
+                                <input type="checkbox" id={club._id} className="modal-toggle" />
+                                <label htmlFor={club._id} className="modal cursor-pointer">
                                     <label className="modal-box relative" htmlFor="">
-                                        <h3 className="text-lg font-bold">{club.name}</h3>
-                                        <p className="py-4">{club.company.catchPhrase}</p>
+                                        <h3 className="text-lg font-bold">{club.title}</h3>
+                                        <p className="py-4">{club.plot}</p>
                                     </label>
                                 </label>
                             </div>
-                            <p>{club.phone}</p>
                         </div>
                     </div>
                 ))}
