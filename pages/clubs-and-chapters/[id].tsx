@@ -47,7 +47,11 @@ const Club = ({ club }) => {
     return (
         <div className={"p-24"}>
             <h1 className={"font-black text-8xl pb-10"}>{club.title}</h1>
+            <p>Rating: { club.imdb.rating }</p>
+            <p>Votes: { club.imdb.votes }</p>
+            <br/>
             <h1>{ club.fullplot }</h1>
+
         </div>
     );
 }
