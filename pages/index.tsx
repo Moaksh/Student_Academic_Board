@@ -10,7 +10,10 @@ import CCHome from "@/components/CCHome";
 import Contact from "@/components/Contact";
 import Grievance from "@/components/Grievance";
 import Back from "@/components/Back";
-
+import Stat from "@/components/Stat";
+import Special from "@/components/Special";
+import { motion } from "framer-motion"
+import Faq from "@/components/Faq";
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -21,11 +24,41 @@ export default function Home() {
             <Hero/>
             <Back/>
         </div>
+        <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{once: true}}
+            transition={{ ease: "easeInOut", duration: 0.5 }}
+           >
         <AboutUs/>
+        </motion.div>
+          <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{once: true}}
+              transition={{ ease: "easeInOut", duration: 0.5 }}
+          >
+          <Stat/>
+          </motion.div>
         <CCHome/>
+          <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{once: true}}
+              transition={{ ease: "easeInOut", duration: 0.5 }}
+          >
+          <Special/>
+          </motion.div>
+          <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{once: true}}
+              transition={{ ease: "easeInOut", duration: 0.5 }}
+          >
         <Contact/>
+          </motion.div>
         <Grievance/>
-          <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
+          <Faq/>
 
       </div>
   )
