@@ -5,6 +5,7 @@ import Hero from "@/components/Hero";
 
 const Layout = ({ children }) => {
     return (
+
         <div>
             <Navbar />
                 {children}

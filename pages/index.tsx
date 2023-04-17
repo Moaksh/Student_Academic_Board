@@ -16,7 +16,9 @@ import { motion } from "framer-motion"
 import Faq from "@/components/Faq";
 const inter = Inter({ subsets: ['latin'] })
 
+
 export default function Home() {
+
   return (
     // <h1 className={"text-4xl p-6 font-black"}>Hi there</h1>
       <div>
