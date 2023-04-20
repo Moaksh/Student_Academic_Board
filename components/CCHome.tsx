@@ -31,7 +31,7 @@ const CcHome = () => {
                         Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.
                         Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
 
-                    <a href="/clubs-and-chapters"><button className="btn btn-secondary">View More</button></a>
+                    <a href="/clubs-and-chapters"><button className="btn btn-outline">View More</button></a>
                 </div>
             </div>
         </div>

@@ -35,9 +35,9 @@ const Clubs = ({ clubs }) => {
                         <div className="card-body items-center text-center">
                             <h2 className="card-title">{club.title}</h2>
                             <p>{club.plot}</p>
-                            <Link href={"/clubs-and-chapters/"+club.title} className={"btn btn-secondary"}>asd</Link>
+                            <Link href={"/clubs-and-chapters/"+club.title} className={"btn btn-outline"}>asd</Link>
                             <div className="card-actions">
-                                <label htmlFor={club._id} className="btn btn-secondary">View More</label>
+                                <label htmlFor={club._id} className="btn btn-outline">View More</label>
                                 <input type="checkbox" id={club._id} className="modal-toggle" />
                                 <label htmlFor={club._id} className="modal cursor-pointer">
                                     <label className="modal-box relative" htmlFor="">

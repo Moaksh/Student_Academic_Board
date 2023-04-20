@@ -4,9 +4,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 body {
     background-image: linear-gradient(to right top, #111226, #1f1226, #2a1122, #32121c, #371515);
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'nueu mentreal', sans-serif !important;
 }
 #bg-wrap{
     filter:blur(100px);
     opacity:0.3;
+}
+.input{
+    background-color: transparent !important;
+}
+.textarea{
+    background-color: transparent !important;
 }
