@@ -1,9 +1,7 @@
-
-
 const Hero = () => {
     return (
         <div>
-            <div className="hero min-h-screen absolute">
+            <div className="hero min-h-screen relative sm:absolute">
                 <div className="hero-content text-center">
                     <div className="w-full">
                         <h1 className="text-9xl font-black">SCSET Cabinet</h1>
@@ -17,5 +15,4 @@ const Hero = () => {
         </div>
     );
 };
-
 export default Hero;

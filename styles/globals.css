@@ -3,7 +3,7 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 body {
-    background-image: linear-gradient(to right top, #111226, #1f1226, #2a1122, #32121c, #371515);
+    background-image: linear-gradient(to right top, #1f214d, #3c1f47, #4d1e3d, #582233, #5c2a2a);
     font-family: 'nueu mentreal', sans-serif !important;
 }
 #bg-wrap{

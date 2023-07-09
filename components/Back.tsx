@@ -1,6 +1,6 @@
 const Back = () => {
     return (
-        <div className={"container "}>
+        <div className={"container hidden sm:block"}>
         <div >
             <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" id="bg-wrap" className={"brightness-50 "}>
                 <defs>

@@ -2,7 +2,10 @@
 const Stat = () => {
     return (
         <div className={"flex justify-center "}>
-            <div className="stats shadow text-4xl">
+            <div className="stats shadow text-4xl ">
+
+
+                
 
                 <div className="stat">
                     <div className="stat-figure text-primary">

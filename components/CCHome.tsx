@@ -2,7 +2,7 @@ const CcHome = () => {
     return (
         <div className="hero min-h-screen">
             <div className="hero-content flex-col lg:flex-row-reverse">
-                <div className="carousel carousel-center rounded-box w-full">
+                <div className="carousel carousel-center rounded-box max-w-sm">
                     <div className="carousel-item w-full">
                         <img src="https://images.unsplash.com/photo-1678960445719-a672e74d976e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1365&q=80" className="w-full" />
                     </div>
