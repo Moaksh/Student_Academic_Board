@@ -61,7 +61,7 @@ export default function Home() {
               viewport={{once: true}}
               transition={{ ease: "easeInOut", duration: 0.5 }}
           >
-        <Contact/>
+        {/*<Contact/>*/}
           </motion.div>
         <Grievance/>
           <Faq/>

@@ -1,31 +1,71 @@
-
-
+import styles from '@/styles/special.module.css'
 const data = [
-    {title: "The Shawshank Redemption", des: "asdasdasdasd"},
-    {title: "The as Redemption", des: "das123"},
-    {title: "The Shawshank 142", des: "asdf"},
-    {title: "The 113 Redemption", des: "affsa"},
+    {title: "Artificial Intelligence", des: "CEOs and CXOs from NVIDIA, Aindra, Here Tech, Amazon, and academics designed the AI curriculum, meeting international standards, which includes electives in Cognitive Modelling, Advanced Computer Vision, Reinforcement Learning, Image and Video Processing, and Natural Language Processing. The University has partnerships with NVIDIA, SAP, Hitachi, and Times Internet to provide students with opportunities to work on innovative projects."},
+    {title: "Cloud Computing", des: "Cloud Computing is in high market demand for its scalability, on-demand solutions, and flexible pricing. To match the demand, there are specialised electives and certification options available, that include Cloud Services Development and Operations, Git and GitHub for Version Control, AWS Cloud Support Associate, Developing Solutions for Microsoft Azure, Google Associate Cloud Engineer, among others."},
+    {title: "Blockchain", des: "The Blockchain specialization curriculum includes courses such as Blockchain Technologies, Smart Contracts and Solidity Programming, Digital Currencies and Blockchain, and Modern Cryptography. CEOs and CXOs of BankchainAsset.com, Digiledge, and other subject matter experts have been consulted in its development. Additionally, Samyak Jain (B.Tech. CSE 2017-21) founded 'Instadapp,' a start-up that manages blockchain-based assets and received funding of 1.4 million USD in 2019."},
+    {title: "Cyber Security", des: "As online transactions and social activities become more important, the demand for strong Cyber Security grows. The Cyber Security curriculum covers topics such as Cyber Security with Blockchain, Malware Analysis for Mobile Devices, Security and Privacy for Big Data Analytics, Penetration Testing, and Ethical Hacking. The University has partnerships with DSCI, Fortinet, CompTIA, and CISCO to offer students cutting-edge project opportunities."},
 
 ]
 
 const Special = () => {
 
     return (
+        // <div className={"min-w-screen"}>
+        //     <h1 className={"flex justify-center font-bold text-5xl pb-6"}>Specialisations</h1>
+        //     <div className="flex justify-center">
+        //         <div className="carousel carousel-end w-3/4 rounded-box ">
+        //             <div className={styles.wrapper}>
+        //                 <div className={styles.cols}>
+        //                     {data.map(item => (
+        //                         <div className={styles.col} onTouchStart={e => e.currentTarget.classList.toggle(styles.hover)}>
+        //                             <div className={styles.container}>
+        //                                 <div className={styles.front}>
+        //                                     <div className={styles.inner}>
+        //                                         <p>{item.title}</p>
+        //                                         <span className={"text-sm"}>Read More</span>
+        //                                     </div>
+        //                                 </div>
+        //                                 <div className={styles.back}>
+        //                                     <div className={styles.inner}>
+        //                                         <p className={"text-sm"}>
+        //                                             {item.des}
+        //                                         </p>
+        //                                     </div>
+        //                                 </div>
+        //                             </div>
+        //                         </div>
+        //                     ))}
+        //
+        //                 </div>
+        //             </div>
+        //         </div>
+        //     </div>
+        //
+        //
+        // </div>
 
         <div className={"min-w-screen"}>
             <h1 className={"flex justify-center font-bold text-5xl pb-6"}>Specialisations</h1>
             <div className="flex justify-center">
                 <div className="carousel carousel-end w-3/4 rounded-box ">
                     {data.map(item => (
-                    <div className="carousel-item p-2">
-                        <div className="card w-96 bg-base-100 shadow-xl">
-                            <div className="card-body items-center">
-                                <h2 className="card-title ">{item.title}</h2>
-                                <p>Ai bleh bleh bleh bleh bleh bleh bleh bleh elvh</p>
-
+                        <div className={styles.col} onTouchStart={e => e.currentTarget.classList.toggle(styles.hover)}>
+                            <div className={styles.container}>
+                                <div className={styles.front}>
+                                    <div className={styles.inner}>
+                                        <p>{item.title}</p>
+                                        <span className={"text-sm"}>Read More</span>
+                                    </div>
+                                </div>
+                                <div className={styles.back}>
+                                    <div className={styles.inner}>
+                                        <p className={"text-sm"}>
+                                            {item.des}
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
                     ))}
                 </div>
             </div>
