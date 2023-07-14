@@ -4,10 +4,10 @@ import clientPromise from "@/lib/mongodb";
 export async function getServerSideProps() {
     try {
         const client = await clientPromise;
-        const db = client.db("sample_mflix");
+        const db = client.db("clubs_&_chaps");
 
         const movies = await db
-            .collection("movies")
+            .collection("Chapters")
             .find({})
             .sort({ metacritic: -1 })
             .limit(25)
@@ -29,20 +29,20 @@ const Clubs = ({ clubs }) => {
                 {/* -- Clubs & Chapter 1 -- */}
                 {clubs.map(club => (
                     <div className="card w-96 bg-base-100 shadow-xl">
-                        <figure className="px-10 pt-10">
-                            {/*<img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" className="rounded-xl" />*/}
-                        </figure>
+                        {/*<figure className="px-10 pt-10">*/}
+                        {/*    <img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" className="rounded-xl" />*/}
+                        {/*</figure>*/}
                         <div className="card-body items-center text-center">
-                            <h2 className="card-title">{club.title}</h2>
-                            <p>{club.plot}</p>
-                            <Link href={"/clubs-and-chapters/"+club.title} className={"btn btn-outline"}>asd</Link>
+                            <h2 className="card-title pb-1">{club.name}</h2>
+                            <p className={"text-left"}>{club.mission}</p>
+                            <Link href={"/clubs-and-chapters/"+club.name} className={"btn btn-outline"}>asd</Link>
                             <div className="card-actions">
                                 <label htmlFor={club._id} className="btn btn-outline">View More</label>
                                 <input type="checkbox" id={club._id} className="modal-toggle" />
                                 <label htmlFor={club._id} className="modal cursor-pointer">
                                     <label className="modal-box relative" htmlFor="">
-                                        <h3 className="text-lg font-bold">{club.title}</h3>
-                                        <p className="py-4">{club.plot}</p>
+                                        <h3 className="text-lg font-bold">{club.name}</h3>
+                                        <p className="py-4">{club.description}</p>
                                     </label>
                                 </label>
                             </div>
