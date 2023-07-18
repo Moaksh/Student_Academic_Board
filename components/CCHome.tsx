@@ -1,8 +1,6 @@
 import Image from "next/image";
 import pic from "@/assets/club&chap.jpg";
-import styles from "@/styles/card.module.css";
-
-const CcHome = () => {
+ const CcHome = () => {
     return (
         <div className="hero min-h-screen py-6">
             <div className="hero-content flex-col lg:flex-row-reverse">
@@ -11,7 +9,7 @@ const CcHome = () => {
                     width={500}
                     height={500}
                     // className=" rounded-lg shadow-2xl img"
-                    className={styles.card}
+                    className="rounded-lg shadow-2xl"
                 />
                 <div>
                     <h1 className="text-5xl font-bold">Clubs and Chapters</h1>

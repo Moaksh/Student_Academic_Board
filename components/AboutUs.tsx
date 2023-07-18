@@ -11,7 +11,8 @@ const AboutUs = () => {
                     src={pic}
                     width={500}
                     height={500}
-                    // className=" rounded-lg shadow-2xl img"
+                    className=" rounded-lg shadow-2xl"
+                    // className={styles.glow}
                 />
 
                 <div>
