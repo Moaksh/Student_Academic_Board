@@ -33,7 +33,7 @@ const Grievance = () => {
     return (
         <div className={"hero min-h-screen"}>
             <div>
-                <div className={"text-left"}>
+                <div className={"text-left px-4"}>
                     <h1 className={"font-bold text-5xl"}>Griviances</h1>
                     <p className={"py-6"}>Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi</p>
                 </div>

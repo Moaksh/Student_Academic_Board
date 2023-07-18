@@ -16,3 +16,30 @@ body {
 .textarea{
     background-color: transparent !important;
 }
+/*.img::after {*/
+/*    position: absolute;*/
+/*    content: "";*/
+/*    top:100vh;*/
+/*    left:0;*/
+/*    z-index: -1;*/
+/*    height: 100%;*/
+/*    width: 100%;*/
+/*    margin: 0 auto;*/
+/*    transform: scale(0.8);*/
+/*    filter: blur(100vh);*/
+/*    background-image: linear-gradient(*/
+/*            var(--rotate)*/
+/*            , #12ff00, #00ffd3 43%, #4e00c2);*/
+/*    opacity: 1;*/
+/*    transition: opacity .5s;*/
+/*    animation: spin 1.5s linear infinite;*/
+/*}*/
+
+/*@keyframes spin {*/
+/*    0% {*/
+/*        --rotate: 0deg;*/
+/*    }*/
+/*    100% {*/
+/*        --rotate: 360deg;*/
+/*    }*/
+/*}*/

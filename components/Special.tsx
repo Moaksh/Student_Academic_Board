@@ -1,5 +1,6 @@
 import styles from '@/styles/special.module.css'
 import 'flowbite';
+import Link from "next/link";
 const data = [
     {title: "Artificial Intelligence", des: "CEOs and CXOs from NVIDIA, Aindra, Here Tech, Amazon, and academics designed the AI curriculum, meeting international standards, which includes electives in Cognitive Modelling, Advanced Computer Vision, Reinforcement Learning, img and Video Processing, and Natural Language Processing. The University has partnerships with NVIDIA, SAP, Hitachi, and Times Internet to provide students with opportunities to work on innovative projects."},
     {title: "Data Science", des: "Data scientists play a key role in the working of smart cities, automation industry, BFSI and Fintech. Given the importance of Data Science, Bennett University has put together a curriculum with the help of CEOs and CXOs of Microsoft, Google, TCS, and other researchers. The curriculum includes elective courses on Structural Equation Modelling; Security and Privacy for Big Data Analytics; Data Visualisation; Big Data Analytics and Business Intelligence; and Satellite Data Analytics."},
@@ -46,7 +47,7 @@ const Special = () => {
         //
         // </div>
 
-        <div className={"min-w-screen"}>
+        <div className={"min-w-screen py-6"}>
             <h1 className={"flex justify-center font-bold text-5xl pb-6"}>Specialisations</h1>
             <div className="flex justify-center">
                  <div className={styles.wrapper}>
@@ -73,6 +74,7 @@ const Special = () => {
                     </div>
                  </div>
             </div>
+
 
 
         </div>
