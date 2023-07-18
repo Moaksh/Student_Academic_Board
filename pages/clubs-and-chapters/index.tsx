@@ -1,5 +1,7 @@
 import Link from "next/link";
 import clientPromise from "@/lib/mongodb";
+import { motion } from "framer-motion"
+
 
 export async function getServerSideProps() {
     try {
@@ -59,7 +61,9 @@ const Clubs = ({ chapters, clubs }) => {
             <h1 className={"font-bold text-5xl px-6 "}>Chapters</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-6">
                 {/* -- Clubs & Chapter 1 -- */}
+
                 {chapters.map(club => (
+
                     <div className="card  bg-base-100 shadow-xl">
                         {/*<figure className="px-10 pt-10">*/}
                         {/*    <img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" className="rounded-xl" />*/}

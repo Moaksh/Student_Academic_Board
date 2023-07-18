@@ -16,3 +16,26 @@ body {
 .textarea{
     background-color: transparent !important;
 }
+.fourofour{
+    font-size: calc( 1em + 30vmin );
+    color: #e5edf5;
+
+    --x-offset: -0.0625em;
+    --y-offset: 0.0625em;
+    --stroke: 0.025em;
+    --background-color: #172c3b;
+    --stroke-color: #9d4a4a;
+
+    text-shadow:
+
+            var(--x-offset)
+            var(--y-offset)
+            0px
+            var(--background-color),
+
+            calc( var(--x-offset) - var(--stroke) )
+            calc( var(--y-offset) + var(--stroke) )
+            0px
+            var(--stroke-color);
+
+}

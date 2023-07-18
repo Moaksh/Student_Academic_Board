@@ -1,10 +1,12 @@
 
+import styles from '@/styles/card.module.css'
+
 const Stat = () => {
     return (
         <div>
             <div className="flex items-center justify-center w-screen text-black">
 
-                <div className="stats stats-vertical lg:stats-horizontal shadow">
+                <div className="stats stats-vertical lg:stats-horizontal shadow ">
 
                     <div className="stat">
                         <div className="stat-title">Total Students</div>
@@ -19,14 +21,66 @@ const Stat = () => {
                     </div>
 
                     <div className="stat">
-                        <div className="stat-title">New Registers</div>
-                        <div className="stat-value">1,200</div>
+                        <div className="stat-title">Publications</div>
+                        <div className="stat-value">900+</div>
                         {/*<div className="stat-desc">↘︎ 90 (14%)</div>*/}
                     </div>
 
                 </div>
 
             </div>
+
+            {/*---------test---------*/}
+            {/*<div className={styles.container}>*/}
+            {/*    <div className={styles.card}>*/}
+            {/*        <h3 className={styles.title}>Total Students</h3>*/}
+            {/*        <div className={styles.bar}>*/}
+            {/*            <div className={styles.emptybar}></div>*/}
+            {/*            <div className={styles.filledbar}></div>*/}
+            {/*        </div>*/}
+            {/*        <div className={styles.circle}>*/}
+            {/*            <svg version="1.1" xmlns="<http://www.w3.org/2000/svg>">*/}
+            {/*                <circle className={styles.stroke} cx="60" cy="60" r="50"/>*/}
+            {/*            </svg>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*    <div className={styles.card}>*/}
+            {/*        <h3 className={styles.title}>Card 2</h3>*/}
+            {/*        <div className={styles.bar}>*/}
+            {/*            <div className={styles.emptybar}></div>*/}
+            {/*            <div className={styles.filledbar}></div>*/}
+            {/*        </div>*/}
+            {/*        <div className={styles.circle}>*/}
+            {/*            <svg version="1.1" xmlns="<http://www.w3.org/2000/svg>">*/}
+            {/*                <circle className={styles.stroke} cx="60" cy="60" r="50"/>*/}
+            {/*            </svg>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*    <div className={styles.card}>*/}
+            {/*        <h3 className={styles.title}>Card 3</h3>*/}
+            {/*        <div className={styles.bar}>*/}
+            {/*            <div className={styles.emptybar}></div>*/}
+            {/*            <div className={styles.filledbar}></div>*/}
+            {/*        </div>*/}
+            {/*        <div className={styles.circle}>*/}
+            {/*            <svg version="1.1" xmlns="<http://www.w3.org/2000/svg>">*/}
+            {/*                <circle className={styles.stroke} cx="60" cy="60" r="50"/>*/}
+            {/*            </svg>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*    <div className={styles.card}>*/}
+            {/*        <h3 className={styles.title}>Card 4</h3>*/}
+            {/*        <div className={styles.bar}>*/}
+            {/*            <div className={styles.emptybar}></div>*/}
+            {/*            <div className={styles.filledbar}></div>*/}
+            {/*        </div>*/}
+            {/*        <div className={styles.circle}>*/}
+            {/*            <svg version="1.1" xmlns="<http://www.w3.org/2000/svg>">*/}
+            {/*                <circle className={styles.stroke} cx="60" cy="60" r="50"/>*/}
+            {/*            </svg>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*</div>*/}
         </div>
     );
 };

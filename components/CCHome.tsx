@@ -2,7 +2,7 @@ import Image from "next/image";
 import pic from "../assets/club&chap.jpg";
  const CcHome = () => {
     return (
-        <div className="hero min-h-screen py-6">
+        <div className="hero min-h-screen">
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <Image
                     src={pic}

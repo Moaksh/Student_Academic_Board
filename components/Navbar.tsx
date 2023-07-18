@@ -7,12 +7,11 @@ const Navbar = () => {
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="/" className="flex items-center">
                     <span
-                        className=" self-center text-2xl font-semibold whitespace-nowrap " id={styles.nav_link}>SCSET Cabinet</span>
+                        className=" self-center text-2xl font-semibold whitespace-nowrap " id={styles.nav_link}>Student cabinet</span>
                 </a>
                 <div className="flex md:order-2">
                     <button type="button"
-                            className="btn btn-outline px-4 py-2 mr-3 ">Get
-                        started
+                            className="btn btn-outline px-4 py-2 mr-3 ">Apply here
                     </button>
                     <button data-collapse-toggle="navbar-cta" type="button"
                             className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"

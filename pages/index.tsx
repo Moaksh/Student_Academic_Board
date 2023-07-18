@@ -35,18 +35,21 @@ export default function Home() {
         <AboutUs/>
         </motion.div>
           <motion.div
-              initial={{ opacity: 0, scale: 0.5 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               viewport={{once: true}}
-              transition={{
-                  delay:0.1,
-                  duration: 1.5,
-                  ease: [0, 0.71, 0.2, 1.01]
-              }}
+              transition={{ ease: "easeInOut", duration: 1 }}
           >
           <Stat/>
           </motion.div>
+          <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{once: true}}
+              transition={{ ease: "easeInOut", duration: 1 }}
+          >
         <CCHome/>
+          </motion.div>
           <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -63,8 +66,22 @@ export default function Home() {
           >
         {/*<Contact/>*/}
           </motion.div>
+          <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{once: true}}
+              transition={{ ease: "easeInOut", duration: 1 }}
+          >
         <Grievance/>
+          </motion.div>
+          <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{once: true}}
+              transition={{ ease: "easeInOut", duration: 1 }}
+          >
           <Faq/>
+          </motion.div>
 
       </div>
   )
