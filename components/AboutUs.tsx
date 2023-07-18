@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import pic from '../assets/team.jpeg';
-import styles from '../styles/card.module.css'
 
 const AboutUs = () => {
     return (
