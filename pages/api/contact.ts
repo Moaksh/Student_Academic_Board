@@ -2,8 +2,27 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import {mailOptions, transporter} from "@/config/nodemailer";
 
-type Data = {
-  name: string
+const CONTACT_MESSAGE_FIELDS = {
+    name: "Name",
+    email: "Email",
+    subject: "Subject",
+    message: "Message",
+};
+
+const generateEmailContent = (data: any) => {
+    const stringData = Object.entries(data).reduce(
+        (str,[key,val]) =>
+            (str += `${CONTACT_MESSAGE_FIELDS[key]}: ${val}\n\n`)
+    ,"");
+    const htmlData = Object.entries(data).reduce(
+        (str,[key,val]) =>
+            (str += `<p><strong>${CONTACT_MESSAGE_FIELDS[key]}:</strong> ${val}</p>`)
+    ,"");
+
+    return{
+        text: stringData,
+        html: `<!doctypehtml><html lang=en><meta charset=UTF-8><title>Email</title><h1 class="text-9xl text-red-600">New Message</h1><p>${htmlData}`,
+    }
 }
 
 const handler = async (req, res) => {
@@ -15,9 +34,9 @@ if (req.method === 'POST') {
     try {
         await transporter.sendMail({
             ...mailOptions,
+            ...generateEmailContent(data),
             subject: data.subject,
-            text: "This is a test string",
-            html: "<h1>This is a test string</h1><p>Body Text</p>"
+
         });
         return res.status(200).json({ message: 'Success' })
     } catch (error){

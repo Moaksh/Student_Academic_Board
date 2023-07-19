@@ -15,7 +15,7 @@ const initState = {values:initValues};
 
 const Grievance = () => {
     const [state, setState ] = useState(initState);
-    const { values,isLoading }  = state;
+    const { values,isLoading, error }  = state;
     const handleChange = ({ target }) =>
         setState((prev) =>({
         ...prev,
@@ -27,9 +27,19 @@ const Grievance = () => {
     const onSubmit = async () => {
         setState((prev) =>({
             ...prev,
+            isLoading: true,
         }));
-        await sendContactForm(values);
+        try {
+            await sendContactForm(values);
+        } catch (error) {
+               setState((prev) =>({
+                   ...prev,
+                   isLoading: false,
+                   error: error.message,
+                }));
+        }
     }
+
     return (
         <div className={"hero min-h-screen"}>
             <div>
@@ -70,8 +80,10 @@ const Grievance = () => {
                             </div>
                             <div className="form-control mt-6">
 
-                                <button type="submit" className=" btn btn-outline max-w-xs" disabled={!values.name || !values.email || !values.message || !values.subject} onClick={onSubmit}>{isLoading ? <>Loading..</> : <>Send</>}</button>
 
+
+                                <button type="submit" className=" btn btn-outline max-w-xs" disabled={!values.name || !values.email || !values.message || !values.subject} onClick={onSubmit}>{isLoading ? <>Loading..</> : <>Send</>}</button>
+                                {error && <p className={"text-red-500 py-2"}>{error}</p>}
                             </div>
                         </form>
                     </div>

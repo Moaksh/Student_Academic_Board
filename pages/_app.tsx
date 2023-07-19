@@ -9,8 +9,8 @@ function Loading() {
     const router = useRouter();
     const [loading, setLoading] = useState(false);
     useEffect(() => {
-        const handleStart = (url: string) => (url !== router.asPath) && setLoading(true);
-        const handleComplete = (url: string) => (url === router.asPath) && setLoading(false);
+        const handleStart = (URL) => (URL !== router.asPath) && setLoading(true);
+        const handleComplete = (URL) => (URL === router.asPath) && setLoading(false);
 
         router.events.on('routeChangeStart', handleStart)
         router.events.on('routeChangeComplete', handleComplete)
@@ -24,21 +24,23 @@ function Loading() {
     })
     return loading && (
         <div className="fixed top-0 left-0 z-50 w-screen h-screen flex items-center justify-center">
-            <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-gray-900"></div>
+            <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-gray-900">
+            </div>
         </div>
 
     )
 }
 export default function App({ Component, pageProps }: AppProps) {
     const router = useRouter();
-    console.log(router);
+    // console.log(router);
+    // console.log(URL);
 
     if(router.pathname === '/404') return <Component {...pageProps} />;
 
 
     return (
         <>
-        <Loading/>
+            <Loading/>
         <Layout>
 
             <motion.div
