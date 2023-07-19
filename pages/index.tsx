@@ -22,15 +22,23 @@ export default function Home() {
   return (
     // <h1 className={"text-4xl p-6 font-black"}>Hi there</h1>
       <div>
+          <motion.div
+              initial = {{opacity: 0, y: 25}}
+              animate={{opacity:1, y: 0 }}
+              transition={{  duration: 0.8,
+                  delay: 0.4,
+                  ease: [0, 0.71, 0.2, 1.01] }}
+          >
         <div className={"container"}>
             <Hero/>
             <Back/>
         </div>
+            </motion.div>
         <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{once: true}}
-            transition={{ ease: "easeInOut", duration: 1 }}
+            transition={{ ease: "easeInOut", duration: 0.8, delay: 0.4, }}
            >
         <AboutUs/>
         </motion.div>
@@ -38,7 +46,7 @@ export default function Home() {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{once: true}}
-              transition={{ ease: "easeInOut", duration: 1 }}
+              transition={{ ease: "easeInOut", duration: 0.8, delay: 0.4, }}
           >
           <Stat/>
           </motion.div>
@@ -46,7 +54,7 @@ export default function Home() {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{once: true}}
-              transition={{ ease: "easeInOut", duration: 1 }}
+              transition={{ ease: "easeInOut", duration: 0.8, delay: 0.4, }}
           >
         <CCHome/>
           </motion.div>
@@ -54,7 +62,7 @@ export default function Home() {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{once: true}}
-              transition={{ ease: "easeInOut", duration: 0.5 }}
+              transition={{ ease: "easeInOut", duration: 0.8, delay: 0.4, }}
           >
           <Special/>
           </motion.div>
@@ -62,7 +70,7 @@ export default function Home() {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{once: true}}
-              transition={{ ease: "easeInOut", duration: 0.5 }}
+              transition={{ ease: "easeInOut", duration: 0.8, delay: 0.4, }}
           >
         {/*<Contact/>*/}
           </motion.div>
@@ -70,7 +78,7 @@ export default function Home() {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{once: true}}
-              transition={{ ease: "easeInOut", duration: 1 }}
+              transition={{ ease: "easeInOut", duration: 0.8, delay: 0.4, }}
           >
         <Grievance/>
           </motion.div>
@@ -78,7 +86,7 @@ export default function Home() {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{once: true}}
-              transition={{ ease: "easeInOut", duration: 1 }}
+              transition={{ ease: "easeInOut", duration: 0.8, delay: 0.4, }}
           >
           <Faq/>
           </motion.div>
