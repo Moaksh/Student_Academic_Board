@@ -71,7 +71,13 @@ const Special = () => {
                                 </div>
                             </div>
                         ))}
+                        {/*<div className="card bg-base-100 shadow-xl">*/}
+                        {/*    <div className="card-body">*/}
+                        {/*        <h2 className="card-title text-center">View More</h2>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
                     </div>
+
                  </div>
             </div>
 

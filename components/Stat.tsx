@@ -9,20 +9,20 @@ const Stat = () => {
                 <div className="stats stats-vertical lg:stats-horizontal shadow ">
 
                     <div className="stat">
-                        <div className="stat-title">Total Students</div>
-                        <div className="stat-value">10,000</div>
+                        <div className="stat-title text-center">Total Students</div>
+                        <div className="stat-value text-center">10,000+</div>
                         {/*<div className="stat-desc">Jan 1st - Feb 1st</div>*/}
                     </div>
 
                     <div className="stat">
-                        <div className="stat-title">Clubs and chapters</div>
+                        <div className="stat-title text-center">Clubs and chapters</div>
                         <div className="stat-value text-center">20+</div>
                         {/*<div className="stat-desc">↗︎ 400 (22%)</div>*/}
                     </div>
 
                     <div className="stat">
-                        <div className="stat-title">Publications</div>
-                        <div className="stat-value">900+</div>
+                        <div className="stat-title text-center">Publications</div>
+                        <div className="stat-value text-center">900+</div>
                         {/*<div className="stat-desc">↘︎ 90 (14%)</div>*/}
                     </div>
 

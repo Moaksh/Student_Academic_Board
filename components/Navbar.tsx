@@ -1,5 +1,8 @@
 import styles from '@/styles/nav.module.css'
 import 'flowbite';
+import pic from "@/assets/logo_flat.png";
+import Image from "next/image";
+import {useRouter} from "next/router";
 const Navbar = () => {
     return (
 
@@ -7,7 +10,12 @@ const Navbar = () => {
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="/" className="flex items-center">
                     <span
-                        className=" self-center text-2xl font-semibold whitespace-nowrap " id={styles.nav_link}>Student cabinet</span>
+                        className=" self-center font-semibold whitespace-nowrap " >
+                        <Image
+                            src={pic}
+                            className={"w-40 sm:w-56"}
+                        />
+                    </span>
                 </a>
                 <div className="flex md:order-2">
                     <button type="button"
@@ -34,13 +42,16 @@ const Navbar = () => {
                                aria-current="page" id={styles.nav_link}>Clubs and Chapters</a>
                         </li>
                         <li>
+
+                            <a href={"/#grievances"}
+                               className="block py-2 pl-3 pr-4 rounded md:bg-transparent md:p-0" id={styles.nav_link}>Grievances</a>
+
+                        </li>
+                        <li>
                             <a href="/events"
                                className="block py-2 pl-3 pr-4 rounded md:bg-transparent md:p-0 " id={styles.nav_link}>Events</a>
                         </li>
-                        <li>
-                            <a href="/griviances"
-                               className="block py-2 pl-3 pr-4 rounded md:bg-transparent md:p-0" id={styles.nav_link}>Griviances</a>
-                        </li>
+
 
                     </ul>
                 </div>

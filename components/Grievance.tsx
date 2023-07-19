@@ -1,6 +1,5 @@
 import {useState} from "react";
-import {sendContactForm} from "../lib/api"
-    ;
+import {sendContactForm} from "../lib/api";
 
 const initValues = {
     name:"",
@@ -41,11 +40,11 @@ const Grievance = () => {
     }
 
     return (
-        <div className={"hero min-h-screen"}>
-            <div>
+        <div className={"hero min-h-screen"} id={"grievances"}>
+            <div className={"sm:w-10/12"}>
                 <div className={"text-left px-4"}>
-                    <h1 className={"font-bold text-5xl"}>Griviances</h1>
-                    <p className={"py-6"}>Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi</p>
+                    <h1 className={"font-bold text-5xl"}>Grievances</h1>
+                    <p className={"py-6"}>Ensuring a transparent and student-centric approach, we actively encourage students to voice their grievances related to the student cabinet, and our dedicated team is committed to swiftly and diligently resolving any issues to enhance the overall student experience.</p>
                 </div>
                 <div className={"flex lg:flex-row flex-col"}>
                 <div className={"card flex-shrink-0 lg:w-1/2 w-full "}>
@@ -88,7 +87,7 @@ const Grievance = () => {
                         </form>
                     </div>
                 </div>
-                    <div className={" content-center items-center justify-center lg:w-1/2 w-full hidden md:flex"}>
+                    <div className={" content-center items-center justify-center lg:w-1/2 w-full hidden lg:flex"}>
                         <div className={"grid grid-cols-1 py-10"}>
 
                                     <div className="max-w-md">

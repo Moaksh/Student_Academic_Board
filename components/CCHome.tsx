@@ -13,9 +13,9 @@ import pic from "../assets/club&chap.jpg";
                 />
                 <div>
                     <h1 className="text-5xl font-bold">Clubs and Chapters</h1>
-                    <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi .
-                        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.
-                        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <p className="py-6">The Student Cabinet at Bennett University serves as a thriving hub for students interested in Computer Science and Engineering, offering a plethora of engaging opportunities beyond the traditional classroom setting. Students are encouraged to participate in various technical workshops, hackathons and seminars providing them with hands-on experience and a chance to apply their theoretical knowledge to practical projects. Additionally, the Student Cabinet organizes guest lectures and industry interaction sessions, inviting experts and professionals to share insights and experiences, thereby bridging the gap between academia and industry.
+                        <br/><br/>The Cabinet's focus extends beyond technical skills, as it also nurtures students' personal development and leadership abilities. Through organizing events, managing club activities, and coordinating chapter initiatives, students gain valuable experience in teamwork, event management, and effective communication.
+                    </p>
 
                     <a href="/clubs-and-chapters"><button className="btn btn-outline">View More</button></a>
                 </div>
