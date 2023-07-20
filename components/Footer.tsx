@@ -10,8 +10,8 @@ const Footer = () => {
                 </div>
             </div>
             <div>
-                <p>Copyright © 2023</p>
-                <p>Made with <span className={"text-red-600"}>&#9829;</span> by Moaksh Kakkar</p>
+                <p>Copyright © 2023 - All right reserved</p>
+                {/*<p>Made with <span className={"text-red-600"}>&#9829;</span> by Moaksh Kakkar</p>*/}
             </div>
         </footer>
     );

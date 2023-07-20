@@ -19,7 +19,7 @@ const AboutUs = () => {
                     <p className="py-6">With the tremendous growth of the School of Computer Science and Technology over the past year, the need for establishing a vision for the future, a structure for functioning and a single student body of representation became necessary. Introducing to you the Student Cabinet of the School of CSET.
 <br/><br/>
                         With 23 technical clubs and chapters under its umbrella, the Student Cabinet works towards  the holistic growth of the student community to uphold the spirit of cooperation, fraternity, and social bonding among all students of the School, and provide a platform for organising themselves, undertaking holistic growth, and organising creative activities for the all-rounded mental, physical, social and cultural growth of students.</p>
-                    <a href="/about-us"><button className="btn btn-outline">Read More</button></a>
+                    <a href="/Job_Descriptions_for_Student_Cabinet_Position.pdf" target={"_blank"}><button className="btn btn-outline">Read More</button></a>
                 </div>
             </div>
         </div>
