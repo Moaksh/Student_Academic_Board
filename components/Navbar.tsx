@@ -3,6 +3,7 @@ import 'flowbite';
 import pic from "@/assets/logo_flat.png";
 import Image from "next/image";
 import {useRouter} from "next/router";
+import Link from "next/link";
 const Navbar = () => {
     return (
 
@@ -18,9 +19,11 @@ const Navbar = () => {
                     </span>
                 </a>
                 <div className="flex md:order-2">
+                    <Link href={"https://forms.gle/om2ZeXom7LR39PEJA"} target={"_blank"}>
                     <button type="button"
                             className="btn btn-outline px-4 py-2 mr-3 ">Apply here
                     </button>
+                    </Link>
                     <button data-collapse-toggle="navbar-cta" type="button"
                             className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                             aria-controls="navbar-cta" aria-expanded="false">
