@@ -231,6 +231,7 @@ const Index = () => {
                         </div>
                         <div className="w-full  p-2">
                             <ul className="list-disc list-outside text-lg px-3">
+                                <li>Applicants are expected to possess a comprehensive understanding of HTML, CSS, JavaScript, database management, as well as a solid foundation in website development and proficiency in communication software suites.</li>
                                 <li>Develop and implement communication strategies for the Student Cabinet.</li>
                                 <li>Manage the Student Cabinet's website and ensure up-to-date and relevant content.</li>
                                 <li>Coordinate with other ministries and secretaries to communicate initiatives and events effectively.</li>
