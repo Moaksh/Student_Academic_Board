@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import {it} from "node:test";
 
 const data = [
@@ -10,18 +11,27 @@ const data = [
 
 const Faq = () => {
     return (
-        <div className={"grid justify-center gap-2 px-4"}>
-            <h1 className={"text-center text-3xl font-bold"}>FAQ's</h1>
-            {data.map(item => (
-            <div tabIndex={0} className=" max-w-prose collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
-                <div className="collapse-title text-lg ">
-                    {item.title}
-                </div>
-                <div className="collapse-content">
-                    <p>{item.des}</p>
-                </div>
-            </div>
-            ))}
+        <div className={"grid justify-center gap-2 bg-secondary text-white px-4"}>
+            <motion.div
+
+                initial={{opacity: 0}}
+                whileInView={{opacity: 1}}
+                viewport={{once: true}}
+                transition={{ease: "easeInOut", duration: 0.8, delay: 0.2,}}
+            >
+                <h1 className={"text-center text-3xl font-bold py-5"}>FAQ's</h1>
+                {data.map(item => (
+                    <div tabIndex={0}
+                         className=" max-w-prose bg-secondary collapse collapse-arrow  border-b-4 border-r-2 rounded-box my-2 shadow-2xl">
+                        <div className="collapse-title text-lg  font-medium ">
+                            {item.title}
+                        </div>
+                        <div className="collapse-content ">
+                            <p>{item.des}</p>
+                        </div>
+                    </div>
+                ))}
+            </motion.div>
         </div>
     );
 };

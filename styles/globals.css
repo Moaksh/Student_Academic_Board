@@ -42,3 +42,18 @@ body {
             var(--stroke-color);
 
 }
+
+.round{
+   border-radius: 10em 10em 0 0;
+}
+
+/*make round class resposive*/
+
+@media (max-width: 768px) {
+    .round{
+        border-radius: 5em 5em 0 0;
+    }
+}
+.label-text {
+    color: #c6d4df;
+}

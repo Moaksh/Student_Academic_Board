@@ -74,22 +74,9 @@ export default function Home() {
           >
         {/*<Contact/>*/}
           </motion.div>
-          <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{once: true}}
-              transition={{ ease: "easeInOut", duration: 0.8, delay:0.2, }}
-          >
+
         <Grievance/>
-          </motion.div>
-          <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{once: true}}
-              transition={{ ease: "easeInOut", duration: 0.8, delay:0.2, }}
-          >
           <Faq/>
-          </motion.div>
 
       </div>
   )

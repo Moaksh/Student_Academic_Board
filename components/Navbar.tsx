@@ -40,6 +40,11 @@ const Navbar = () => {
                      id="navbar-cta">
                     <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border rounded-xl md:flex-row md:space-x-8 md:mt-0 md:border-0 ">
                         <li>
+                            <a href="/#about-us"
+                               className=" block py-2 pl-3 pr-4 rounded md:bg-transparent md:p-0 "
+                               aria-current="page" id={styles.nav_link}>About us</a>
+                        </li>
+                        <li>
 
                             <a href={"/#grievances"}
                                className="block py-2 pl-3 pr-4 rounded md:bg-transparent md:p-0" id={styles.nav_link}>Grievances</a>

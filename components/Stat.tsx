@@ -6,7 +6,7 @@ const Stat = () => {
         <div>
             <div className="flex items-center justify-center w-screen text-black">
 
-                <div className="stats stats-vertical lg:stats-horizontal shadow ">
+                <div className="stats stats-vertical lg:stats-horizontal shadow shadow-lg border-0 ">
 
                     <div className="stat">
                         <div className="stat-title text-center">Total Students</div>

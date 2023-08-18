@@ -37,8 +37,7 @@ import pic4 from "../assets/DSC07542.jpg";
                 </div>
                 <div>
                     <h1 className="text-5xl font-bold">Clubs and Committees</h1>
-                    <p className="py-6">The Student Cabinet at Bennett University serves as a thriving hub for students interested in Computer Science and Engineering, offering a plethora of engaging opportunities beyond the traditional classroom setting. Students are encouraged to participate in various technical workshops, hackathons and seminars providing them with hands-on experience and a chance to apply their theoretical knowledge to practical projects. Additionally, the Student Cabinet organizes guest lectures and industry interaction sessions, inviting experts and professionals to share insights and experiences, thereby bridging the gap between academia and industry.
-                        <br/><br/>The Cabinet's focus extends beyond technical skills, as it also nurtures students' personal development and leadership abilities. Through organizing events, managing club activities, and coordinating chapter initiatives, students gain valuable experience in teamwork, event management, and effective communication.
+                    <p className="py-6">The Student Academic Council consists of committees that focus on academic quality, student welfare, research and innovation, and events and activities. Each committee has specific responsibilities and works collaboratively to achieve the council's objectives. They provide a platform for student representation and advocacy, promote academic excellence and student welfare, and ensure that all areas receive adequate attention.
                     </p>
 
                     <a href="/clubs-and-committees"><button className="btn btn-outline">View More</button></a>
