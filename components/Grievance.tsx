@@ -50,7 +50,7 @@ const Grievance = () => {
             >
                 <div className={"flex justify-center"}>
             <div className={"sm:w-10/12"}>
-                <div className={"text-left px-4"}>
+                <div className={"text-left px-4 py-10"}>
                     <h1 className={"font-bold text-5xl"}>Grievances</h1>
                     <p className={"py-6"}>Ensuring a transparent and student-centric approach, we actively encourage students to voice their grievances related to Academics in your school , and our dedicated team is committed to swiftly and diligently resolving any issues to enhance the overall student experience.</p>
                 </div>

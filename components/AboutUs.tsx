@@ -18,7 +18,7 @@ const AboutUs = () => {
                     <h1 className="text-5xl font-bold pt-10 sm:pt-0">About Us</h1>
                     <p className="py-6">We are a team of highly motivated professionals committed to empowering students and enriching their academic experience. Our mission is to develop a dynamic and inclusive educational environment that encourages innovation, creativity, and lifelong learning. We firmly believe that every student has the right to shape their educational path and that effective collaboration among students, faculty, and administration is essential to realizing this goal. In order to achieve our vision, we have implemented various initiatives and programs aimed at promoting academic excellence, supporting student well-being, and fostering community engagement. We are constantly seeking new ways to enhance our offerings and improve the overall educational experience for our students.
                     </p>
-                    <a href="/job_descriptions" ><button className="btn btn-outline">Read More</button></a>
+                    <a href="/about-us" ><button className="btn btn-outline">Read More</button></a>
                 </div>
             </div>
         </div>

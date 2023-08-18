@@ -8,7 +8,7 @@ const Hero = () => {
                 <div className="hero-content text-center align-middle content-center ">
                     <div className="w-full">
                         <center>
-                        <Image src={pic} className={"w-auto sm:w-1/3"} />
+                        {/*<Image src={pic} className={"w-auto sm:w-1/3"} />*/}
                         </center>
                         <h1 className="text-6xl sm:text-9xl font-black">Student Academic Board</h1>
                         <div className="w-full">
