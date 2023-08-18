@@ -10,7 +10,7 @@ const Hero = () => {
                         <center>
                         <Image src={pic} className={"w-auto sm:w-1/3"} />
                         </center>
-                        <h1 className="text-7xl sm:text-9xl font-black">Student cabinet</h1>
+                        <h1 className="text-7xl sm:text-9xl font-black">Student Academic Board</h1>
                         <div className="w-full">
                         <p className=" py-6">Your Vision, Our Mission: Empowering Academics, Together</p>
                         </div>

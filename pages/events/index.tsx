@@ -5,7 +5,7 @@ const Index = () => {
     return (
         <div>
             <div className="hero min-h-screen" >
-                <div className="hero-content text-center text-neutral-content">
+                <div className="hero-content text-center ">
                     <div className="max-w-lg">
                         <Image src={pic} className={"w-auto"} />
                         <h1 className="mb-5 text-5xl sm:text-9xl font-bold">Oops!</h1>

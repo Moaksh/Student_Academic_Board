@@ -13,39 +13,6 @@ const data = [
 const Special = () => {
 
     return (
-        // <div className={"min-w-screen"}>
-        //     <h1 className={"flex justify-center font-bold text-5xl pb-6"}>Specialisations</h1>
-        //     <div className="flex justify-center">
-        //         <div className="carousel carousel-end w-3/4 rounded-box ">
-        //             <div className={styles.wrapper}>
-        //                 <div className={styles.cols}>
-        //                     {data.map(item => (
-        //                         <div className={styles.col} onTouchStart={e => e.currentTarget.classList.toggle(styles.hover)}>
-        //                             <div className={styles.container}>
-        //                                 <div className={styles.front}>
-        //                                     <div className={styles.inner}>
-        //                                         <p>{item.title}</p>
-        //                                         <span className={"text-sm"}>Read More</span>
-        //                                     </div>
-        //                                 </div>
-        //                                 <div className={styles.back}>
-        //                                     <div className={styles.inner}>
-        //                                         <p className={"text-sm"}>
-        //                                             {item.des}
-        //                                         </p>
-        //                                     </div>
-        //                                 </div>
-        //                             </div>
-        //                         </div>
-        //                     ))}
-        //
-        //                 </div>
-        //             </div>
-        //         </div>
-        //     </div>
-        //
-        //
-        // </div>
 
         <div className={"min-w-screen py-6"}>
             <h1 className={"flex justify-center font-bold text-5xl pb-6"}>Specialisations</h1>
@@ -71,11 +38,7 @@ const Special = () => {
                                 </div>
                             </div>
                         ))}
-                        {/*<div className="card bg-base-100 shadow-xl">*/}
-                        {/*    <div className="card-body">*/}
-                        {/*        <h2 className="card-title text-center">View More</h2>*/}
-                        {/*    </div>*/}
-                        {/*</div>*/}
+
                     </div>
 
                  </div>

@@ -7,13 +7,6 @@ export async function getServerSideProps() {
     try {
         const client = await clientPromise;
         const db = client.db("clubs_&_chaps");
-
-        const movies = await db
-            .collection("Chapters")
-            .find({})
-            .sort({ name: 1 })
-            .limit(25)
-            .toArray();
         const clus = await db
             .collection("Clubs")
             .find({})
@@ -22,19 +15,20 @@ export async function getServerSideProps() {
             .toArray();
 
         return {
-            props: { chapters: JSON.parse(JSON.stringify(movies)), clubs: JSON.parse(JSON.stringify(clus)) },
+            props: { clubs: JSON.parse(JSON.stringify(clus)) },
         };
     } catch (e) {
         console.error(e);
     }
 }
-const Clubs = ({ chapters, clubs }) => {
+const Clubs = ({ clubs }) => {
     return (
         <div className="p-2 sm:p-24">
-            <h1 className={"font-black text-7xl sm:text-9xl pb-10"}>Clubs and Chapters</h1>
+            <h1 className={"font-black text-7xl sm:text-9xl pb-10"}>Clubs and Committees</h1>
             <h1 className={"font-bold text-5xl px-6 "}>Clubs</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-6">
                 {clubs.map(club => (
+                    (club.type === "club") ?(
                     <div className="card  bg-base-100 shadow-xl">
                         {/*<figure className="px-10 pt-10">*/}
                         {/*    <img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" className="rounded-xl" />*/}
@@ -43,7 +37,7 @@ const Clubs = ({ chapters, clubs }) => {
                             <img src={club.logo} alt={club.name} className={"w-40 rounded-2xl "}/>
                             <h2 className="card-title pb-1">{club.name}</h2>
                             {/*<p className={"text-left"}>{club.mission}</p>*/}
-                            {/*<Link href={"/clubs-and-chapters/"+club.name} className={"btn btn-outline"}>asd</Link>*/}
+                            {/*<Link href={"/clubs-and-committees/"+club.name} className={"btn btn-outline"}>asd</Link>*/}
                             <div className="card-actions">
                                 <label htmlFor={club._id} className="btn btn-outline">View More</label>
                                 <input type="checkbox" id={club._id} className="modal-toggle" />
@@ -56,13 +50,14 @@ const Clubs = ({ chapters, clubs }) => {
                             </div>
                         </div>
                     </div>
+                    ) : null
                 ))}
             </div>
             <h1 className={"font-bold text-5xl px-6 "}>Chapters</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-6">
-                {/* -- Clubs & Chapter 1 -- */}
 
-                {chapters.map(club => (
+                {clubs.map(club => (
+                    (club.type === "chapter") ?(
 
                     <div className="card  bg-base-100 shadow-xl">
                         {/*<figure className="px-10 pt-10">*/}
@@ -72,7 +67,7 @@ const Clubs = ({ chapters, clubs }) => {
                             <img src={club.logo} alt={club.name} className={"w-40 rounded-2xl "}/>
                             <h2 className="card-title pb-1">{club.name}</h2>
                             {/*<p className={"text-left"}>{club.mission}</p>*/}
-                            {/*<Link href={"/clubs-and-chapters/"+club.name} className={"btn btn-outline"}>asd</Link>*/}
+                            {/*<Link href={"/clubs-and-committees/"+club.name} className={"btn btn-outline"}>asd</Link>*/}
                             <div className="card-actions">
                                 <label htmlFor={club._id} className="btn btn-outline">View More</label>
                                 <input type="checkbox" id={club._id} className="modal-toggle" />
@@ -85,6 +80,7 @@ const Clubs = ({ chapters, clubs }) => {
                             </div>
                         </div>
                     </div>
+                    ) : null
                 ))}
                 {/*/!* -- Clubs & Chapter 2 -- *!/*/}
                 {/*<div className="card w-96 bg-base-100 shadow-xl">*/}
