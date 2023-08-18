@@ -11,7 +11,7 @@ body {
 }
 #bg-wrap{
     filter:blur(100px);
-    opacity:0.3;
+    opacity:0.35;
 }
 .input{
     background-color: transparent !important;
