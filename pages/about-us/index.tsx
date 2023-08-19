@@ -35,14 +35,14 @@ import pic from "@/assets/team.jpeg";
 
 const Index = () => {
     return (
-        <div className={"p-2 my-4 sm:px-24"}>
+        <div className={"p-2 sm:p-24"}>
 
 
         <div className={"  grid w-full place-items-center   "}>
-            <h1 className={"font-black text-6xl md:text-8xl pb-10"}>Introduction</h1>
+            <h1 className={"font-black text-7xl sm:text-9xl"}>Introduction</h1>
 
 
-            <div className=" w-full lg:w-3/5  px-3">
+            <div className=" w-full lg:w-4/5  px-3">
 
 
                 <div className="flex-col  ">
@@ -61,7 +61,7 @@ const Index = () => {
                     </div>
                     <div className="divider"></div>
                     <div>
-                        <h1 className={"font-black text-6xl md:text-8xl pb-10 text-center"}>Objectives</h1>
+                        <h1 className={"font-black text-7xl sm:text-9xl text-center"}>Objectives</h1>
 
                         <div className="w-full p-2  ">
                             <p>The Student Academic Council in a university plays a crucial role in enhancing the academic environment and ensuring the welfare of students. Its objectives encompass a range of activities and initiatives aimed at fostering academic excellence, student engagement, and overall personal development. The primary objectives of a Student Academic Council in a university are as follows:</p>
