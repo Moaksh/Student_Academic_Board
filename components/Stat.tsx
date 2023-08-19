@@ -10,12 +10,12 @@ const Stat = () => {
 
                     <div className="stat">
                         <div className="stat-title text-center">Total Students</div>
-                        <div className="stat-value text-center">5,000+</div>
+                        <div className="stat-value text-center">8,000+</div>
                         {/*<div className="stat-desc">Jan 1st - Feb 1st</div>*/}
                     </div>
 
                     <div className="stat">
-                        <div className="stat-title text-center">Clubs and chapters</div>
+                        <div className="stat-title text-center">Clubs and Committees</div>
                         <div className="stat-value text-center">20+</div>
                         {/*<div className="stat-desc">↗︎ 400 (22%)</div>*/}
                     </div>
