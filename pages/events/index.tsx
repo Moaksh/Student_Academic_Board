@@ -58,7 +58,7 @@ const Index = ({ events }) => {
 
                                 </div>
 
-                                <div className=" w-1/2">
+                                <div className=" lg:w-1/2">
                                     <Link href={event.link} target={"_blank"}>
                                     <img src={event.image} alt={event.name} className={"h-full rounded-2xl "}/>
                                     </Link>

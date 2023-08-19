@@ -24,7 +24,7 @@ export async function getServerSideProps() {
 const Clubs = ({ clubs }) => {
     return (
         <div className="p-2 sm:p-24">
-            <h1 className={"font-black text-7xl sm:text-9xl pb-10"}>Clubs and Committees</h1>
+            <h1 className={"font-black text-5xl sm:text-9xl pb-10"}>Clubs and Committees</h1>
             <h1 className={"font-bold text-5xl px-6 "}>Clubs</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-6">
                 {clubs.map(club => (
