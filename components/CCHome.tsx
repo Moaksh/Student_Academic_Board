@@ -37,7 +37,7 @@ import pic4 from "../assets/DSC07542.jpg";
                 </div>
                 <div>
                     <h1 className="text-5xl font-bold">Clubs and Committees</h1>
-                    <p className="py-6">The Student Academic Council consists of committees that focus on academic quality, student welfare, research and innovation, and events and activities. Each committee has specific responsibilities and works collaboratively to achieve the council's objectives. They provide a platform for student representation and advocacy, promote academic excellence and student welfare, and ensure that all areas receive adequate attention.
+                    <p className="py-6">The Student Academic Board consists of committees that focus on academic quality, student welfare, research and innovation, and events and activities. Each committee has specific responsibilities and works collaboratively to achieve the board's objectives. They provide a platform for student representation and advocacy, promote academic excellence and student welfare, and ensure that all areas receive adequate attention.
                     </p>
 
                     <a href="/clubs-and-committees"><button className="btn btn-outline">View More</button></a>
