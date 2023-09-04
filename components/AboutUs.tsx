@@ -5,13 +5,11 @@ const AboutUs = () => {
     return (
         <div className="hero min-h-screen " id={"about-us"}>
             <div className="hero-content flex-col lg:flex-row">
-                {/*<img src="https://images.unsplash.com/photo-1678649494696-63127b98d4bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" className="max-w-sm rounded-lg shadow-2xl"  />*/}
                 <Image
                     src={pic}
                     width={500}
                     height={500}
                     className=" rounded-lg shadow-2xl"
-                    // className={styles.glow}
                 />
 
                 <div>
